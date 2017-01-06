@@ -1,0 +1,41 @@
+<!-- begin header -->
+<header>
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="active">
+              <%= link_to root_path %>
+              <i class="icon-home"></i>
+              <% end %>
+            </li>
+            <li><%= link_to "About Us", about_us_path %></li>
+            <li><%= link_to "Contact Us", contact_us_path %></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+  <div id="logo-container">
+    <div class="container">
+      <div class="row">
+        <div class="span8">
+          <a class="brand" href="index.html"><span class="logo-text">Foodback</span></a>
+          <span class="tag-line hidden-phone">Best Restaurant Review</span>
+        </div>
+        <div class="span4">
+          <div class="phone-number pull-right"><i class="icon-phone"></i> Call Us: <strong>1 (800) 765 4321</strong></div><!--/phone-number-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #logo-container -->
+</header>  
+<!-- end header -->
