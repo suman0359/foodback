@@ -10,7 +10,8 @@
                   <h2 class="head-title">Welcome to foodback</h2>
                   <p class="head-message"><strong>foodback xHTML/CSS Template is The Best Solution To Sell House Online.</strong><br />
                   This template is appropriate for Real Estate Company, who need to do their business online via websites.</p>
-                  <a class="btn btn-large btn-foodback span3 header-cta" href="#" title="Buy It Now">Buy It Now!</a>
+                  <%= link_to "Rwrite a Review", new_restaurant_path, title: "Rwrite a Review", class: "btn btn-large btn-realto span3 header-cta"%>
+                  <a class="" href="#" >Buy It Now!</a>
                 </div>
                 <div class="span4">
                   <div class="search-form">
@@ -70,7 +71,7 @@
                         <option value="#" />to $500.000
                       </select>
                       <div class="clearfix">
-                        <button class="btn pull-right span6 btn-foodback-form btn-large" type="submit">Search</button>
+                        <button class="btn pull-right span6 btn-realto-form btn-large" type="submit">Search</button>
                       </div>
                     </form>
                   </div>
@@ -113,7 +114,7 @@
                 <div class="holder">
                   <a class="overlay" title="property title" href="#">
                     <span class="more"></span>
-                    <img alt="image" src="images/01.jpg" class="media-object" />
+                    <img alt="image" src="<%= asset_path('01.jpg') %>" class="media-object" />
                   </a>
                   <span class="prop-tag">For Sale</span>
                   <div class="prop-info">
@@ -129,7 +130,7 @@
                 <div class="holder">
                   <a class="overlay" title="property title" href="#">
                     <span class="more"></span>
-                    <img alt="image" src="images/02.jpg" class="media-object" />
+                    <img alt="image" src="<%= asset_path('02.jpg') %>" class="media-object" />
                   </a>
                   <span class="prop-tag">For Rent</span>
                   <div class="prop-info">
@@ -145,7 +146,7 @@
                 <div class="holder">
                   <a class="overlay" title="property title" href="#">
                     <span class="more"></span>
-                    <img alt="image" src="images/03.jpg" class="media-object" />
+                    <img alt="image" src="<%= asset_path('03.jpg') %>" class="media-object" />
                   </a>
                   <span class="prop-tag">For Sale</span>
                   <div class="prop-info">
@@ -165,7 +166,7 @@
               <div class="holder">
                   <a class="overlay" title="property title" href="#">
                   <span class="more"></span>
-                  <img alt="image" src="images/04.jpg" class="media-object" />
+                  <img alt="image" src="<%= asset_path('04.jpg') %>" class="media-object" />
                   </a>
                   <span class="prop-tag">For Rent</span>
                   <div class="prop-info">
@@ -181,7 +182,7 @@
               <div class="holder">
                   <a class="overlay" title="property title" href="#">
                   <span class="more"></span>
-                  <img alt="image" src="images/06.jpg" class="media-object" />
+                  <img alt="image" src="<%= asset_path('06.jpg') %>" class="media-object" />
                   </a>
                   <span class="prop-tag">For Sale</span>
                   <div class="prop-info">
@@ -197,7 +198,7 @@
               <div class="holder">
                   <a class="overlay" title="property title" href="#">
                   <span class="more"></span>
-                  <img alt="image" src="images/07.jpg" class="media-object" />
+                  <img alt="image" src="<%= asset_path('07.jpg') %>" class="media-object" />
                   </a>
                   <span class="prop-tag">For Rent</span>
                   <div class="prop-info">
@@ -315,7 +316,7 @@
             Company, who need to do their business online via websites.</p>
         </div>
         <!-- .pull-left -->
-        <a class="pull-right btn btn-large btn-foodback span3" href="#" title="Buy It Now">Buy
+        <a class="pull-right btn btn-large btn-realto span3" href="#" title="Buy It Now">Buy
           It Now!</a>
       </div>
       <!-- .adv-message  -->
@@ -331,7 +332,7 @@
           <div class="home-agents widget">
             <a class="overlay" href="#" title="agent name">
               <span class="more"></span>
-              <img alt="image" class="media-object" src="images/agent-01.jpg" />
+              <img alt="image" class="media-object" src="<%= asset_path('agent-01.jpg') %>" />
             </a>
             <p class="home-agent-name">John Doe</p>
             <a class="serif italic" href="#" title="View profile page">View profile
@@ -343,7 +344,7 @@
           <div class="home-agents widget">
             <a class="overlay" href="#" title="agent name">
               <span class="more"></span>
-              <img alt="image" class="media-object" src="images/agent-02.jpg" />
+              <img alt="image" class="media-object" src="<%= asset_path('agent-02.jpg') %>" />
             </a>
             <p class="home-agent-name">Susan Underwood</p>
             <a class="serif italic" href="#" title="View profile page">View profile
@@ -355,7 +356,7 @@
           <div class="home-agents widget">
             <a class="overlay" href="#" title="agent name">
               <span class="more"></span>
-              <img alt="image" class="media-object" src="images/agent-06.jpg" />
+              <img alt="image" class="media-object" src="<%= asset_path('agent-06.jpg') %>" />
             </a>
             <p class="home-agent-name">Erik Peterson</p>
             <a class="serif italic" href="#" title="View profile page">View profile
@@ -367,7 +368,7 @@
           <div class="home-agents widget">
             <a class="overlay" href="#" title="agent name">
               <span class="more"></span>
-              <img alt="image" class="media-object" src="images/agent-07.jpg" />
+              <img alt="image" class="media-object" src="<%= asset_path('agent-07.jpg') %>" />
             </a>
             <p class="home-agent-name">Lu Jackson</p>
             <a class="serif italic" href="#" title="View profile page">View profile

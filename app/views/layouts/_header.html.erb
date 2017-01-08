@@ -1,4 +1,3 @@
-<!-- begin header -->
 <header>
   <div class="navbar navbar-inverse navbar-static-top">
     <div class="navbar-inner">
@@ -11,7 +10,7 @@
         <div class="nav-collapse collapse">
           <ul class="nav">
             <li class="active">
-              <%= link_to root_path %>
+              <%= link_to root_path do %>
               <i class="icon-home"></i>
               <% end %>
             </li>
@@ -27,15 +26,16 @@
     <div class="container">
       <div class="row">
         <div class="span8">
-          <a class="brand" href="index.html"><span class="logo-text">Foodback</span></a>
+          <a class="brand" href="/"><span class="logo-text">Foodback</span></a>
           <span class="tag-line hidden-phone">Best Restaurant Review</span>
         </div>
         <div class="span4">
-          <div class="phone-number pull-right"><i class="icon-phone"></i> Call Us: <strong>1 (800) 765 4321</strong></div><!--/phone-number-->
+          <ul class="list-inline pull-right">
+            <li><%= link_to "Sign in", new_user_session_path %></li>
+            <li><%= link_to "Sign up", new_user_registration_path %></li>
+          </ul>          
         </div>
       </div>
     </div>
   </div>
-  <!-- #logo-container -->
 </header>  
-<!-- end header -->
